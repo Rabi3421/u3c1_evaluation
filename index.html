@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* body{
+        text-align: center;
+      }
+      #products{
+        text-align: center;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+      input{
+        width: 100px;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <button id="show_products" onclick="redirect()">Show Products</button>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+      <form id="products">
+        <input type="text" id="type" placeholder="type of product">
+        <input type="text" id="desc" placeholder="Description">
+        <input type="number" id="price" placeholder="price">
+        <input type="url" id="image" placeholder="image url">
+        <button onclick="storeProduct()" id="add_product">Add Product</button>
+
+      </form>
+
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
